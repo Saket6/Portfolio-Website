@@ -242,6 +242,7 @@ body{
 {
     color: white;
     font-weight: bolder;
+    overflow-wrap: anywhere;
 }
 
 .skill
@@ -429,6 +430,16 @@ body{
     .aboutmain{
         grid-template-columns: 1fr;
     }
+    .heading{
+        font-size: larger;
+    }
+    .img{
+        height: 200px;
+        width: 200px;
+    }
+    .prof{
+        font-size: large;
+    }
     .skill
     {
         grid-template-columns: 1fr 1fr;
@@ -448,6 +459,12 @@ body{
     }
     .navbar{
         display: block !important;
+    }
+    .listitems{
+        font-size: small;
+    }
+    .container{
+        height: 63vh;
     }
     .about{
         margin: 23px !important;
