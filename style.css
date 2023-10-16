@@ -10,11 +10,53 @@ body{
     background-color: rgb(6 31 47);
     /* background: linear-gradient(to right, rgb(0, 20, 34) 0%, rgb(35, 73, 97) 100%); */
 }
+/* 
+.display-none{
+    display: none;
+}
+.display-block{
+    display: block;
+} */
 
 
+.hamburger{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* margin-top: 20px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgba(51, 212, 233, 0.253);
+    position: relative;
+    /* top: 30px;
+    right: 30px; */
+}
 
+.navbar2{
+    display: none ;
+    background-color: rgba(0, 0, 0, 0.507);
+    /* justify-content: end;
+    display: flex; */
+    /* text-align: right; */
+  
+    height: 10vh;
+    padding: 14px;
+    position: sticky;
+    top: 0;
+}
 
+.hamburger:hover{
+    background-color: rgba(127, 255, 212, 0.267);
+}
 
+.lines{
+    background-color: white;
+    height: 5px;
+}
 
 ::-webkit-scrollbar {
     width: 4px; 
@@ -43,6 +85,8 @@ body{
 
 .navbar
 {
+    
+    animation-fill-mode: forwards;
     background-color: rgba(0, 0, 0, 0.507);
     padding: 20px;
     position: sticky;
@@ -53,6 +97,21 @@ body{
     z-index: 10;
     grid-template-columns: 1fr 5fr;
     /* box-shadow: 10px 2px 20px black; */
+}
+
+.slidetop{
+    animation-name: slidetop;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+
+@keyframes slidetop {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
 }
 
 .ul{
@@ -187,6 +246,15 @@ body{
     width: 10vw;
     color: white;
     background-color: transparent;
+}
+.red{
+    margin-left: 10px;
+    border: solid 3px #ff015f;
+    
+}
+.red:hover{
+    background-color: #ff015f !important;
+    color: white !important;
 }
 
 .btn:hover{
@@ -454,12 +522,22 @@ body{
     .skill{
         grid-template-columns: 1fr;
     }
+    .desc{
+        display: flex;
+        justify-content: center;
+    }
+    .heading{
+        text-align: center;
+    }
+    .prof{
+        text-align: center;
+    }
     .namediv{
         display: none !important;
     }
-    .navbar{
+    /* .navbar{
         display: block !important;
-    }
+    } */
     .listitems{
         font-size: small;
     }
@@ -486,6 +564,17 @@ body{
 
 @media screen and (max-width: 466px)
 {
+    .navbar{
+        display: none;
+        position: sticky;
+        top: 10vh;
+    }
+    .navbar2{
+        display: flex !important;
+        justify-content: end;
+        /* display: flex; */
+        align-items: center;
+    }
     .contact form{
         width: 80%;
     }
@@ -496,11 +585,21 @@ body{
     .left{
         padding: 13px !important;
     }
-    .navbar{
-        display: block !important;
-    }
+    
     .cards{
         max-width: 100% !important;
+    }
+    .details{
+        padding: 0px !important;
+    }
+    .btns{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+    }
+    .btn{
+        width: 100%;
     }
     .navbar ul{
         display: grid;
