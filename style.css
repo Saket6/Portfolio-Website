@@ -42,11 +42,10 @@ body{
     /* justify-content: end;
     display: flex; */
     /* text-align: right; */
-  
+    z-index: 10;
     height: 10vh;
     padding: 14px;
-    position: sticky;
-    top: 0;
+    
 }
 
 .hamburger:hover{
@@ -545,7 +544,7 @@ body{
         height: 63vh;
     }
     .about{
-        margin: 23px !important;
+        margin: 10vh 0 0 23px !important;
         /* margin-top: 13vh; */
     }
     .port_main{
@@ -570,6 +569,9 @@ body{
         top: 10vh;
     }
     .navbar2{
+        position: sticky;
+         top: 0;
+         left: 0;
         display: flex !important;
         justify-content: end;
         /* display: flex; */
