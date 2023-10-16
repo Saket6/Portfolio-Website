@@ -598,7 +598,7 @@ body{
         width: 80%;
     }
     .container{
-        padding: 0 !important;
+        padding: 40px 10px 10px 10px !important;
         font-size: large !important;
     }
     .left{
