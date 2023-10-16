@@ -53,10 +53,6 @@ body{
     background-color: rgba(127, 255, 212, 0.267);
 }
 
-.lines{
-    background-color: white;
-    height: 5px;
-}
 
 ::-webkit-scrollbar {
     width: 4px; 
@@ -107,10 +103,11 @@ body{
 
 @keyframes slidetop {
     0%{
-        transform: translateX(100vw);
+        transform: translateY(-10vw);
+       
     }
     100%{
-        transform: translateX(0vw);
+        transform: translateY(0vw);
     }
 }
 
@@ -499,14 +496,15 @@ body{
         grid-template-columns: 1fr;
     }
     .heading{
-        font-size: larger;
+        font-size: xx-large;
     }
     .img{
         height: 200px;
         width: 200px;
     }
-    .prof{
-        font-size: large;
+    .prof2{
+        font-size: xx-large;
+
     }
     .skill
     {
@@ -524,12 +522,14 @@ body{
     }
     .desc{
         display: flex;
+        text-align: center;
         justify-content: center;
     }
     .heading{
         text-align: center;
     }
     .prof{
+
         text-align: center;
     }
     .namediv{
