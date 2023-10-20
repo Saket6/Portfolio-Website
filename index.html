@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -150,61 +151,80 @@
     </div>
   </section>
 
-  <section class="portfolio" id="portfolio">
+  <!-- <section class="portfolio" id="portfolio"> -->
     <h1 class="header" id="head">My <span class="prof">Portfolio</span></h1>
-    <div class="port_main">
-      <div class="skills  cards ">
-        <img src="./images/food.jpg.png" alt="" class="card_img">
-        <div class="card_body">
-          <h2 class="card_head">Food Delivery App</h2>
-          <p class="desc">A food delivery app using react,mongodb,express js and node js.</p>
+    <!-- <div class="port_main"> -->
+
+
+      <div class="swiper mySwiper portfolio" id="portfolio">
+        <div class="swiper-wrapper port_main ">
+          <div class="swiper-slide"><div class="skills  cards ">
+            <img src="./images/food.jpg.png" alt="" class="card_img">
+            <div class="card_body">
+              <h2 class="card_head">Food Delivery App</h2>
+              <p class="desc">A food delivery app using react,mongodb,express js and node js.</p>
+            </div>
+          </div></div>
+          <div class="swiper-slide"><div class="skills cards">
+            <img src="./images/scramble.png" alt="" class="card_img">
+            <div class="card_body">
+              <h2 class="card_head">Scramble game</h2>
+              <p class="desc">A scramble game to identify jumbled words using html,javascript and css.</p>
+            </div>
+          </div></div>
+          <div class="swiper-slide"><div class="skills cards">
+            <img src="./images/aicte.png" alt="" class="card_img">
+            <div class="card_body">
+              <h2 class="card_head">Curriculum design Portal</h2>
+              <p class="desc">A curriculum design portal to create courses react,mongodb,express js and node js.</p>
+            </div>
+          </div></div>
+          <div class="swiper-slide"> <div class="skills cards">
+            <img src="./images/chat.png" alt="" class="card_img">
+            <div class="card_body">
+              <h2 class="card_head">Chat App</h2>
+              <p class="desc">A simple chat application using react,mongodb,express js and node js.</p>
+            </div>
+          </div></div>
+          <div class="swiper-slide"><div class="skills cards">
+            <img src="./images/dance.png" alt="" class="card_img">
+            <div class="card_body">
+              <h2 class="card_head">Dance Website Landing Page</h2>
+              <p class="desc">A Dance Website landing page using html,nodejs.</p>
+            </div>
+          </div></div>
+          <div class="swiper-slide"> <div class="skills cards">
+            <img src="./images/ytclone.png" alt="" class="card_img">
+            <div class="card_body">
+              <h2 class="card_head">Youtube clone</h2>
+              <p class="desc">A simple Youtube clone using html,css and javascript.</p>
+            </div>
+          </div></div>
+          
         </div>
+        <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-pagination"></div>
       </div>
-      <div class="skills cards">
-        <img src="./images/scramble.png" alt="" class="card_img">
-        <div class="card_body">
-          <h2 class="card_head">Scramble game</h2>
-          <p class="desc">A scramble game to identify jumbled words using html,javascript and css.</p>
-        </div>
-      </div>
-      <div class="skills cards">
-        <img src="./images/aicte.png" alt="" class="card_img">
-        <div class="card_body">
-          <h2 class="card_head">Curriculum design Portal</h2>
-          <p class="desc">A curriculum design portal to create courses react,mongodb,express js and node js.</p>
-        </div>
-      </div>
-      <div class="skills cards">
-        <img src="./images/chat.png" alt="" class="card_img">
-        <div class="card_body">
-          <h2 class="card_head">Chat App</h2>
-          <p class="desc">A simple chat application using react,mongodb,express js and node js.</p>
-        </div>
-      </div>
-      <div class="skills cards">
-        <img src="./images/dance.png" alt="" class="card_img">
-        <div class="card_body">
-          <h2 class="card_head">Dance Website Landing Page</h2>
-          <p class="desc">A Dance Website landing page using html,nodejs.</p>
-        </div>
-      </div>
-      <div class="skills cards">
-        <img src="./images/ytclone.png" alt="" class="card_img">
-        <div class="card_body">
-          <h2 class="card_head">Youtube clone</h2>
-          <p class="desc">A simple Youtube clone using html,css and javascript.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
+
+
+      
+      
+      
+     
+      
+     
+    <!-- </div> -->
+  <!-- </section> -->
 
   <section class="contact" id="contact">
     <h1 class="header head">Contact <span class="name">Me</span></h1>
-    <form action="#">
-      <input type="email" class="inputs" placeholder="Enter your Email here">
-      <input type="text" class="inputs" placeholder="Enter your Name here">
-      <textarea class="inputs" name="" id="" cols="50" rows="15" placeholder="Write here"></textarea>
-      <button type="submit" class="btn send_btn">Send</button>
+    <form action="#" id="form">
+      <input type="email" id="email" class="inputs" placeholder="Enter your Email here">
+      <input type="text" id="sender_name" class="inputs" placeholder="Enter your Name here">
+      <textarea class="inputs"  name="" id="text" cols="50" rows="15" placeholder="Write here"></textarea>
+      <button type="submit" class="btn send_btn" id="send_btn">Send</button>
     </form>
   </section>
   <footer class="footer">
@@ -228,6 +248,10 @@
 
   </footer>
 
+//scripts
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
